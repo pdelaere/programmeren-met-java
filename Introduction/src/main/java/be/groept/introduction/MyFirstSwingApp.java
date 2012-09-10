@@ -2,7 +2,12 @@ package be.groept.introduction;
 
 import java.awt.EventQueue;
 
+import javax.swing.JEditorPane;
 import javax.swing.JFrame;
+import javax.swing.JTextPane;
+import java.awt.BorderLayout;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
 
 public class MyFirstSwingApp {
 
@@ -38,5 +43,22 @@ public class MyFirstSwingApp {
 		frame = new JFrame();
 		frame.setBounds(100, 100, 450, 300);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new BoxLayout(frame.getContentPane(), BoxLayout.X_AXIS));
+		
+		JButton btnNewButton = new JButton("open");
+		JEditorPane editPane = new JEditorPane();
+		frame.getContentPane().add(btnNewButton);
+		
+		btnOpen.addActionListener (new ActionListener(){
+		public void  ActionPerfiormed(ActionEvent e){
+			JoptionPane joptionPane = new JOptionPane();
+			String Url
+		}
+			
+		}
+		
+		
+		JTextPane textPane = new JTextPane();
+		frame.getContentPane().add(textPane);
 	}
 }
