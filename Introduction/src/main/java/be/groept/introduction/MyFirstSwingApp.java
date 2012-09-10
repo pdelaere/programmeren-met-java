@@ -13,6 +13,8 @@ public class MyFirstSwingApp {
 
 	private JFrame frame;
 
+	
+	// Dit is commentaar //
 	/**
 	 * Launch the application.
 	 */
